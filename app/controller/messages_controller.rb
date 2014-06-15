@@ -5,7 +5,7 @@ class MessagesController < ApplicationController
 
   get '/entry' do
     content_type= 'text/html'
-    @messages = Message.all.limit(10).order('created_at DESC').reverse
+    @messages = Message.all.limit(15).order('created_at DESC').reverse
     haml :'messages/entry', layout: false
   end
 

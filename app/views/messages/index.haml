@@ -1,20 +1,43 @@
-.col-sm-12
+.col-sm-8
   .widget.chat
     .panel
       .panel-heading
         .panel-title
-          Local Chat
+          Local chat
           %i.fa.fa-heart
       .panel-body#chat
-        / .entry
-        /   .user
-        /     .avatar
-        /       %img{:class => "thumb-sm circle", :src => "images/default-avatar.png", :alt => "Sharnie Ivery"}
-        /     .username
-        /       %a{href: "#"}
-        /         @sharnieivery
-        /     %p Lorem
+
       .panel-footer
         .compose
           %form{action: "/new", method: "POST", id: "message-form"}
             %input{name: "message[content]", id: "search", placeholder: "Click here to type a message.", autocomplete: "off", autofocus: true}
+.col-sm-4
+  .panel
+    .panel-heading
+      .panel-title
+        Users online
+      .panel-body
+        .entry
+          .user
+            .avatar
+              %img{:class => "thumb-sm circle", :src => "images/default-avatar.png", :alt => "Sharnie Ivery"}
+            .username
+              %a{href: "#"}
+                Justin Bieber
+            %p Instagram
+        .entry
+          .user
+            .avatar
+              %img{:class => "thumb-sm circle", :src => "images/default-avatar.png", :alt => "Sharnie Ivery"}
+            .username
+              %a{href: "#"}
+                Sharnie Ivery
+            %p Facebook
+        .entry
+          .user
+            .avatar
+              %img{:class => "thumb-sm circle", :src => "images/default-avatar.png", :alt => "Sharnie Ivery"}
+            .username
+              %a{href: "#"}
+                Barack Obama
+            %p Twitter

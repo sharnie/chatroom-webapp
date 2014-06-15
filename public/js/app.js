@@ -5,7 +5,7 @@ $(document).ready(function(){
 
   function feed(){
     $('#chat').load(entryUrl, function(){
-      setTimeout(feed, 4000);
+      setTimeout(feed, 4200);
     });
   };
   feed();
