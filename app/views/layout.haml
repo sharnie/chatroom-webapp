@@ -1,0 +1,17 @@
+!!!
+%html
+  %head
+    %title BK001
+    %link{href: "http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css", rel: "stylesheet"}
+    %link{href: "http://fonts.googleapis.com/css?family=Roboto:400,300,700", rel: "stylesheet", type: "text/css"}
+    / %link{href: "css/bootstrap.min.css", rel: "stylesheet"}
+    %link{href: "css/layout.css", rel: "stylesheet"}
+    %link{href: "css/style.css", rel: "stylesheet"}
+  %body
+    %main
+      .container= yield
+    %footer
+      &copy; BK001 2014
+      %script{src: "js/jquery-1.11.1.min.js"}
+      %script{src: "js/underscore-min.js"}
+      %script{src: "js/app.js"}

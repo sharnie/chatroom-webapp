@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html, body {
+  /*background: url('http://instapeople.com/app/images/bg.jpg') no-repeat center center fixed;*/
+  background-color: #399bdc;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  -webkit-font-smoothing: antialiased;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* Thumbnail */
+.thumb-sm {width: 35px;}
+.rounded {border-radius: 2px;}
+.circle {border-radius: 50%;}
+
+/* Panel */
+.panel {
+  background-color: #fff;
+  border-radius: 2px;
+  border: none;
+}
+.panel .panel-heading {
+  padding: 0px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  background-color: transparent;
+}
+.panel .panel-heading .panel-title {
+  padding: 10px;
+  font-weight: 700;
+  color: #788288;
+}
+.panel i.fa-heart {color: #c0392b;}
+.panel-body {
+  max-height: 500px;
+  overflow-y: scroll;
+}
+
+/* Entry */
+.entry {
+  border-bottom: 1px solid rgba(0,0,0,0.03);
+  overflow: hidden;
+}
+.entry .user {
+  padding: 10px;
+}
+.entry .user .avatar {
+  float: left;
+  display: inline-block;
+  vertical-align: bottom;
+  padding-right: 10px;
+  position: relative;
+}
+.entry .user .avatar span.status {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border-radius: 50px;
+  right: 10px;
+}
+.offline {background-color: #e67e22;}
+.online {background-color: #2ecc71;}
+.entry .user p.location {
+  font-weight: 400;
+  font-size: 14px;
+  vertical-align: -webkit-baseline-middle;
+  display: inline-block;
+}
+.entry .user p {
+  font-weight: 300;
+  display: table-cell;
+}
+.entry .user .username a {
+  color: #399bdc;
+  text-decoration: none;
+}
+.panel-footer .compose {
+  border-top: 1px solid rgba(0,0,0,0.11);
+  background-color: rgba(0,0,0,0.06);
+  padding: 10px;
+}
+.compose input#search {
+  border: 1px solid rgba(0,0,0,0.15);
+  width: 100%;
+  resize: none;
+  outline: none;
+  padding: 10px;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: 300;
+}
+.compose input#message:focus {
+  border: 1px solid #2980b9;
+}
+footer {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  padding: 10px;
+}
+
+
+
+

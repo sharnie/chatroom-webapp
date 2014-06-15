@@ -7,5 +7,4 @@ end
 
 use Rack::MethodOverride
 run ApplicationController
-# specify your controllers
-use HomeController
+use MessagesController

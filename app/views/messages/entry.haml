@@ -1,0 +1,9 @@
+- @messages.each do |message|
+  .entry
+    .user
+      .avatar
+        %img{:class => "thumb-sm circle", :src => "images/default-avatar.png", :alt => "Sharnie Ivery"}
+      .username
+        %a{href: "#"}
+          @sharnieivery
+      %p= message.content

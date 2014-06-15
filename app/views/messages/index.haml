@@ -1,0 +1,20 @@
+.col-sm-12
+  .widget.chat
+    .panel
+      .panel-heading
+        .panel-title
+          Local Chat
+          %i.fa.fa-heart
+      .panel-body#chat
+        / .entry
+        /   .user
+        /     .avatar
+        /       %img{:class => "thumb-sm circle", :src => "images/default-avatar.png", :alt => "Sharnie Ivery"}
+        /     .username
+        /       %a{href: "#"}
+        /         @sharnieivery
+        /     %p Lorem
+      .panel-footer
+        .compose
+          %form{action: "/new", method: "POST", id: "message-form"}
+            %input{name: "message[content]", id: "search", placeholder: "Click here to type a message.", autocomplete: "off", autofocus: true}
