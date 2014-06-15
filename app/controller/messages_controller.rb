@@ -1,17 +1,12 @@
 class MessagesController < ApplicationController
   get '/' do
-    haml :"messages/index"
+    haml :'messages/index'
   end
 
   get '/entry' do
     content_type= 'text/html'
-    @messages = Message.all
-    haml :"messages/entry", layout: false
-  end
-
-  get '/messages.json' do
-    content_type :json
-    @messages = Message.all.limit(10).order('created_at DESC').reverse.to_json
+    @messages = Message.all.limit(10).order('created_at DESC').reverse
+    haml :'messages/entry', layout: false
   end
 
   post '/new' do
